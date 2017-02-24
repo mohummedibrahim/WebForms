@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Title</title>
+        <!-- jQuery JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <!-- jQuery UI JS -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <!-- jQuery UI CSS -->
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">	
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Entryform.css">
+    </head>
+    <body>
+<div id="formmodal" class="newentryform">
+    <div class="headerBar">
+        <span class="headerTitle"></span>
+        <button type="button" class="closebtn" onclick="closeform()">&#10006;</button>
+    </div>
+    <div class="formArea">
+        <div class="_frm">
+            <div class="_grp clear">
+                <h1>Group Heading</h1>                
+                <div class="_fld">
+                    <div class="_lbl">Combo</div>
+                    <div class="_sel">
+                        <input name="combo" id="combo"/>
+                        <ul class="dropdown">
+                            <li class="one">One</li>
+                            <li class="two">two</li>
+                            <li class="three">three</li>
+                            <li class="four">four</li>
+                            <li class="five">five</li>
+                            <li class="one">One</li>
+                            <li class="two">two</li>
+                            <li class="three">three</li>
+                            <li class="four">four</li>
+                            <li class="five">five</li>
+                        </ul>
+                        <i class="fa fa-caret-down"></i>                        
+                    </div>
+                </div>
+                <div class="_fld">
+                    <div class="_lbl">Text</div>
+                    <div class="_inp"><input id="SenComp" name="SenComp" /></div>
+                </div>
+                <div class="_fld clear">
+                    <div class="_lbl">Text new line</div>
+                    <div class="_inp"><input id="SenName" name="SenName"/></div>
+                </div>
+                <div class="_fld">
+                    <div class="_lbl">Text/Combo</div>
+                    <div class="_inp"><input id="SenCity" name="SenCity" style="width:120px;"/></div>
+                </div>
+                <div class="_fld">
+                    <div class="_sel">
+                        <input name="SenSt" id="SenSt" style="width:60px;padding: 6px 10px;"/>
+                        <ul class="dropdown">
+                            <li class="one">One</li>
+                            <li class="two">two</li>
+                            <li class="three">three</li>
+                            <li class="four">four</li>
+                            <li class="five">five</li>
+                            <li class="one">One</li>
+                            <li class="two">two</li>
+                            <li class="three">three</li>
+                            <li class="four">four</li>
+                            <li class="five">five</li>                                
+                        </ul>
+                        <i class="fa fa-caret-down"></i>                        
+                    </div>        
+                </div>
+            </div>
+            <div class="_grp clear">
+                <h1>Dims and Weight</h1>
+                <div class="_fld">
+                    <div class="_lbl" style="min-width:70px;text-align:center;">PCs</div>
+                    <div class="_lbl" style="min-width:110px;margin-left:-5px;text-align:center;">Weight</div>
+                    <div class="_lbl" style="min-width:72px;margin-left:-5px;text-align:center;">L</div>
+                    <div class="_lbl" style="min-width:72px;margin-left:-5px;text-align:center;">W</div>
+                    <div class="_lbl" style="min-width:72px;margin-left:-5px;text-align:center;">H</div>
+                    <div class="_lbl" style="min-width:110px;margin-left:-5px;text-align:center;">Actual</div>
+                    <div class="_lbl" style="min-width:110px;margin-left:-5px;text-align:center;">Bill.</div>
+                    <div class="_lbl" style="min-width:50px;text-align:center;">+</div>           
+                </div>
+                <div>
+                    <div class="_fld clear"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="btn" style="min-width:45px;">+</div>
+                </div>
+                <div style="display:none;">
+                    <div class="_fld clear"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="btn" style="min-width:45px;">+</div>
+                </div>
+                <div style="display:none;">
+                    <div class="_fld clear"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:60px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="_fld"><div class="_inp" style="width:100px;"><input /></div></div>
+                    <div class="btn" style="min-width:45px;">+</div>
+                </div>
+            </div>
+        </div>        
+    </div>		    
+    <div class="footerBar">
+    <!--
+        <button type="button" id="cancelbtn" class="footerbtn" onclick="closeform()">Cancel</button>
+        <button type="button" id="resetbtn" class="footerbtn" onclick="ResetMe()">Rest</button>
+        <button type="button" id="savenewbtn" class="footerbtn">Save and New</button>
+    -->    
+        <button type="button" id="savebtn" class="footerbtn">Save</button>
+    </div>
+</div>        
+        
+        <script src="Entryform.js"></script>
+    </body>
+</html>
